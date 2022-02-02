@@ -22,7 +22,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             JetRortyTheme {
-                DestinationsNavHost(navGraph = NavGraphs.root)
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colors.background
+                ) {
+                    DestinationsNavHost(navGraph = NavGraphs.root)
+                }
             }
         }
     }
@@ -30,17 +35,12 @@ class MainActivity : ComponentActivity() {
 
 @Destination(start = true)
 @Composable
-fun MainScreen(navigator: DestinationsNavigator) {
-    Surface(
+fun MainScreen(navigator: DestinationsNavigator? = null) {
+    Box(
         modifier = Modifier.fillMaxSize(),
-        color = MaterialTheme.colors.background
+        contentAlignment = Alignment.Center
     ) {
-        Box(
-            modifier = Modifier.fillMaxSize(),
-            contentAlignment = Alignment.Center
-        ) {
-            Greeting("Android")
-        }
+        Greeting("Android")
     }
 }
 
@@ -53,6 +53,7 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     JetRortyTheme {
-        Greeting("Android")
+        //Greeting("Android")
+        MainScreen()
     }
 }
