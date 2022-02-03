@@ -61,4 +61,8 @@ dependencies {
     implementation(Deps.Compose.Ui)
     implementation(Deps.Compose.Material)
     implementation(Deps.Compose.Preview)
+
+    implementation(Deps.Network.Moshi)
+    implementation(Deps.AndroidX.FragmentKtx)
+    implementation(Deps.AndroidX.LifecycleRuntime)
 }

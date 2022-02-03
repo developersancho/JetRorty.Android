@@ -17,6 +17,9 @@ object Deps {
         const val Lifecycle = "2.4.0"
         const val Paging = "3.1.0"
         const val Material = "1.5.0"
+        const val FragmentKtx = "1.4.1"
+        const val PlayCoreKtx = "1.8.1"
+
         const val Moshi = "1.13.0"
         const val MoshiAdapter = "2.2"
         const val Retrofit = "2.9.0"
@@ -84,6 +87,9 @@ object Deps {
         const val Material = "com.google.android.material:material:${Version.Material}"
 
         const val LifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Version.Lifecycle}"
+
+        const val FragmentKtx = "androidx.fragment:fragment-ktx:${Version.FragmentKtx}"
+        const val PlayCoreKtx = "com.google.android.play:core-ktx:${Version.PlayCoreKtx}"
     }
 
     object Network {
@@ -123,7 +129,8 @@ object Deps {
     object Navigation {
         const val Core = "io.github.raamcosta.compose-destinations:core:${Version.Raamcosta}"
         const val Compiler = "io.github.raamcosta.compose-destinations:ksp:${Version.Raamcosta}"
-        const val Animation = "io.github.raamcosta.compose-destinations:animations-core:${Version.Raamcosta}"
+        const val Animation =
+            "io.github.raamcosta.compose-destinations:animations-core:${Version.Raamcosta}"
     }
 
     object Test {

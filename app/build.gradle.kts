@@ -117,6 +117,9 @@ dependencies {
     implementation(Deps.AndroidX.LifecycleRuntime)
     implementation(Deps.Compose.Activity)
 
+    implementation(Deps.AndroidX.FragmentKtx)
+    implementation(Deps.AndroidX.PlayCoreKtx)
+
     testImplementation(Deps.Test.Junit)
     androidTestImplementation(Deps.Test.JunitExt)
     androidTestImplementation(Deps.Test.Espresso)
