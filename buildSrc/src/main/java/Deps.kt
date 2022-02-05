@@ -10,7 +10,7 @@ object Deps {
         const val PagingCompose = "1.0.0-alpha14"
         const val CoilCompose = "2.0.0-alpha06"
 
-        const val Raamcosta = "1.2.1-beta"
+        const val Raamcosta = "1.2.2-beta"
 
         const val CoreKtx = "1.7.0"
         const val Coroutines = "1.6.0"

@@ -53,4 +53,6 @@ dependencies {
 
     implementation(Deps.Koin.Android)
     testImplementation(Deps.Koin.Test)
+
+    implementation(Deps.AndroidX.Paging)
 }
