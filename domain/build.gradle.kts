@@ -50,4 +50,7 @@ dependencies {
     testImplementation(Deps.Test.Junit)
     androidTestImplementation(Deps.Test.JunitExt)
     androidTestImplementation(Deps.Test.Espresso)
+
+    implementation(Deps.Koin.Android)
+    testImplementation(Deps.Koin.Test)
 }

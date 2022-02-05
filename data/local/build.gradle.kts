@@ -53,4 +53,7 @@ dependencies {
 
     implementation(Deps.Cache.Room)
     ksp(Deps.Cache.RoomCompiler)
+
+    implementation(Deps.Koin.Android)
+    testImplementation(Deps.Koin.Test)
 }
