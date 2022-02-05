@@ -1,6 +1,17 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.parcelize")
+    id("com.google.devtools.ksp")
+}
+
+kotlin {
+    sourceSets.main {
+        kotlin.srcDir("build/generated/ksp/main/kotlin")
+    }
+    sourceSets.test {
+        kotlin.srcDir("build/generated/ksp/test/kotlin")
+    }
 }
 
 android {
@@ -73,6 +84,7 @@ dependencies {
     implementation(Deps.Common.Timber)
 
     implementation(Deps.Cache.Room)
+    ksp(Deps.Cache.RoomCompiler)
     implementation(Deps.Cache.DatastorePref)
     implementation(Deps.Cache.SecurityPref)
 }
