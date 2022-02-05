@@ -62,7 +62,17 @@ dependencies {
     implementation(Deps.Compose.Material)
     implementation(Deps.Compose.Preview)
 
-    implementation(Deps.Network.Moshi)
     implementation(Deps.AndroidX.FragmentKtx)
     implementation(Deps.AndroidX.LifecycleRuntime)
+    implementation(Deps.AndroidX.Paging)
+
+    implementation(Deps.Network.Moshi)
+    implementation(Deps.Network.Retrofit)
+    implementation(Deps.Network.Okhttp)
+
+    implementation(Deps.Common.Timber)
+
+    implementation(Deps.Cache.Room)
+    implementation(Deps.Cache.DatastorePref)
+    implementation(Deps.Cache.SecurityPref)
 }

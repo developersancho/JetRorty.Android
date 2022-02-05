@@ -9,6 +9,9 @@ import android.os.Build
 import android.provider.Settings
 import androidx.annotation.RequiresApi
 import java.io.File
+import java.io.IOException
+import java.net.InetSocketAddress
+import java.net.Socket
 
 @SuppressLint("MissingPermission", "NewApi")
 fun Context.isInternetAvailable(): Boolean {
@@ -27,6 +30,21 @@ fun Context.isInternetAvailable(): Boolean {
     }
 
     return result
+}
+
+fun isInternetAvailable(): Boolean {
+    return try {
+        val timeoutMs = 1500
+        val sock = Socket()
+        val sockaddr = InetSocketAddress("8.8.8.8", 53)
+
+        sock.connect(sockaddr, timeoutMs)
+        sock.close()
+
+        true
+    } catch (e: IOException) {
+        false
+    }
 }
 
 @SuppressLint("HardwareIds")

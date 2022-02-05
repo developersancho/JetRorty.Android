@@ -128,6 +128,7 @@ dependencies {
     debugImplementation(Deps.Compose.DebugTooling)
 
     implementation(Deps.Cache.DatastorePref)
+    implementation(Deps.Cache.SecurityPref)
     implementation(Deps.Cache.Room)
     ksp(Deps.Cache.RoomCompiler)
 
@@ -148,4 +149,8 @@ dependencies {
     implementation(Deps.Koin.Android)
     implementation(Deps.Koin.Compose)
     testImplementation(Deps.Koin.Test)
+
+    implementation(Deps.AndroidX.Paging)
+    releaseImplementation(Deps.Network.ReleaseChucker)
+    debugImplementation(Deps.Network.DebugChucker)
 }
