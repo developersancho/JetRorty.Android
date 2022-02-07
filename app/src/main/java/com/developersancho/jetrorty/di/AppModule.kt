@@ -9,5 +9,7 @@ val appModule = listOf(
     remoteModule(),
     localModule(),
     repositoryModule,
-    domainModule
+    domainModule,
+    viewModelModule,
+    providerModule
 )

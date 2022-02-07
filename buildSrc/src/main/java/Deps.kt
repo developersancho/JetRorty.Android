@@ -9,6 +9,7 @@ object Deps {
         const val ConstraintlayoutCompose = "1.0.0"
         const val PagingCompose = "1.0.0-alpha14"
         const val CoilCompose = "2.0.0-alpha06"
+        const val NavigationCompose = "2.4.0"
 
         const val Raamcosta = "1.2.2-beta"
 
@@ -49,7 +50,7 @@ object Deps {
             "androidx.compose.material:material-icons-core:${Version.Compose}"
         const val MaterialIconExtended =
             "androidx.compose.material:material-icons-extended:${Version.Compose}"
-
+        const val Navigation = "androidx.navigation:navigation-compose:${Version.NavigationCompose}"
         const val Activity = "androidx.activity:activity-compose:${Version.ActivityCompose}"
         const val ViewModel =
             "androidx.lifecycle:lifecycle-viewmodel-compose:${Version.ViewModelCompose}"

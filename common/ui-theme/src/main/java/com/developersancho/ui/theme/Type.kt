@@ -6,17 +6,47 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-// Set of Material typography styles to start with
-val Typography = Typography(
+val DarkTypography = Typography(
+    h1 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.Bold,
+        color = White,
+        fontSize = 28.sp
+    ),
+    h2 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.Bold,
+        color = White,
+        fontSize = 21.sp
+    ),
+    h3 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.SemiBold,
+        color = White,
+        fontSize = 18.sp
+    ),
     body1 = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = RalewayFonts,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
-    )
-    /* Other default text styles to override
+        color = White,
+        fontSize = 14.sp
+    ),
+    body2 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.Bold,
+        color = White,
+        fontSize = 14.sp
+    ),
+    subtitle1 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.Medium,
+        color = White,
+        fontSize = 14.sp
+    ),
     button = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.W500,
+        color = White,
         fontSize = 14.sp
     ),
     caption = TextStyle(
@@ -24,5 +54,56 @@ val Typography = Typography(
         fontWeight = FontWeight.Normal,
         fontSize = 12.sp
     )
-    */
+)
+
+// set of light material typography styles to start with.
+val LightTypography = Typography(
+    h1 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.Bold,
+        color = Black,
+        fontSize = 28.sp
+    ),
+    h2 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.Bold,
+        color = Black,
+        fontSize = 21.sp
+    ),
+    h3 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.SemiBold,
+        color = Black,
+        fontSize = 18.sp
+    ),
+    body1 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.Normal,
+        color = Black,
+        fontSize = 14.sp
+    ),
+    body2 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.Bold,
+        color = Black,
+        fontSize = 14.sp
+    ),
+    subtitle1 = TextStyle(
+        fontFamily = RalewayFonts,
+        fontWeight = FontWeight.Medium,
+        color = Black,
+        fontSize = 14.sp
+    ),
+    button = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.W500,
+        color = Black,
+        fontSize = 14.sp
+    ),
+    caption = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Normal,
+        color = Black,
+        fontSize = 12.sp
+    )
 )

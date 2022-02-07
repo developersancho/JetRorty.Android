@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_huge">40dp</dimen>
+    <dimen name="margin_xxl">26dp</dimen>
+    <dimen name="margin_xl">20dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="margin_xxs">2dp</dimen>
+
+    <dimen name="radius_xs">2dp</dimen>
+    <dimen name="radius_small">4dp</dimen>
+    <dimen name="radius_medium">6dp</dimen>
+    <dimen name="radius_big">10dp</dimen>
+    <dimen name="radius_bigger">16dp</dimen>
+    <dimen name="radius_large">24dp</dimen>
+    <dimen name="radius_xl">32dp</dimen>
+    <dimen name="radius_xxl">45dp</dimen>
+    <dimen name="radius_circular">90dp</dimen>
+</resources>

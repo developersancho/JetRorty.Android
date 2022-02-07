@@ -75,7 +75,8 @@ android {
             "-Xopt-in=kotlinx.coroutines.FlowPreview",
             "-Xopt-in=kotlin.Experimental",
             "-Xjvm-default=all",
-            "-Xopt-in=androidx.compose.material.ExperimentalMaterialApi"
+            "-Xopt-in=androidx.compose.material.ExperimentalMaterialApi",
+            "-Xopt-in=com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi"
         )
     }
 
@@ -116,6 +117,13 @@ dependencies {
     implementation(Deps.Compose.Preview)
     implementation(Deps.AndroidX.LifecycleRuntime)
     implementation(Deps.Compose.Activity)
+    implementation(Deps.Compose.Foundation)
+    implementation(Deps.Compose.MaterialIconCore)
+    implementation(Deps.Compose.MaterialIconExtended)
+    implementation(Deps.Compose.Coil)
+    implementation(Deps.Compose.Paging)
+
+    implementation(Deps.AndroidX.Paging)
 
     implementation(Deps.AndroidX.FragmentKtx)
     implementation(Deps.AndroidX.PlayCoreKtx)
@@ -126,6 +134,11 @@ dependencies {
 
     androidTestImplementation(Deps.Compose.Junit4)
     debugImplementation(Deps.Compose.DebugTooling)
+
+    implementation(Deps.Accompanist.Insets)
+    implementation(Deps.Accompanist.Navigation)
+    implementation(Deps.Accompanist.Systemuicontroller)
+    implementation(Deps.Accompanist.Swiperefresh)
 
     implementation(Deps.Cache.DatastorePref)
     implementation(Deps.Cache.SecurityPref)
@@ -141,6 +154,9 @@ dependencies {
     implementation(Deps.Network.Okhttp)
     implementation(Deps.Network.OkhttpInterceptor)
     testImplementation(Deps.Network.OkhttpMock)
+
+    implementation(Deps.AndroidX.CoroutinesAndroid)
+    implementation(Deps.AndroidX.CoroutinesCore)
 
     implementation(Deps.Navigation.Core)
     ksp(Deps.Navigation.Compiler)

@@ -83,6 +83,9 @@ dependencies {
 
     implementation(Deps.Common.Timber)
 
+    implementation(Deps.AndroidX.CoroutinesAndroid)
+    implementation(Deps.AndroidX.CoroutinesCore)
+
     implementation(Deps.Cache.Room)
     ksp(Deps.Cache.RoomCompiler)
     implementation(Deps.Cache.DatastorePref)

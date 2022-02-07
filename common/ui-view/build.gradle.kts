@@ -53,6 +53,9 @@ android {
 }
 
 dependencies {
+    implementation(project(Modules.Theme))
+    implementation(project(Modules.Resource))
+
     implementation(Deps.AndroidX.CoreKtx)
     testImplementation(Deps.Test.Junit)
     androidTestImplementation(Deps.Test.JunitExt)
@@ -61,4 +64,15 @@ dependencies {
     implementation(Deps.Compose.Ui)
     implementation(Deps.Compose.Material)
     implementation(Deps.Compose.Preview)
+
+    implementation(Deps.Compose.Foundation)
+    implementation(Deps.Compose.MaterialIconCore)
+    implementation(Deps.Compose.MaterialIconExtended)
+    implementation(Deps.Compose.Coil)
+
+    implementation(Deps.Accompanist.Insets)
+    implementation(Deps.Accompanist.Navigation)
+    implementation(Deps.Accompanist.Systemuicontroller)
+    implementation(Deps.Accompanist.Swiperefresh)
+    implementation(Deps.Accompanist.Placeholder)
 }

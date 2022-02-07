@@ -56,6 +56,8 @@ android {
 }
 
 dependencies {
+    implementation(project(Modules.Resource))
+
     implementation(Deps.AndroidX.CoreKtx)
     testImplementation(Deps.Test.Junit)
     androidTestImplementation(Deps.Test.JunitExt)
