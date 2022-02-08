@@ -26,6 +26,7 @@ import org.koin.core.parameter.parametersOf
 @Composable
 fun MainRoot(finish: () -> Unit) {
     JetRortyTheme {
+        //val navHostEngine = rememberAnimatedNavHostEngine()
         val navController = rememberNavController()
         val currentBackStackEntryAsState by navController.currentBackStackEntryAsState()
         val destination = currentBackStackEntryAsState?.navDestination
@@ -35,11 +36,19 @@ fun MainRoot(finish: () -> Unit) {
             BackHandler { finish() }
         }
 
+//        val bottomSheetNavigator = rememberBottomSheetNavigator()
+//        navController.navigatorProvider += bottomSheetNavigator
+
+        //ModalBottomSheetLayout(bottomSheetNavigator = bottomSheetNavigator) {
         Surface(
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colors.background
         ) {
-            DestinationsNavHost(navGraph = NavGraphs.root, navController = navController) {
+            DestinationsNavHost(
+                navGraph = NavGraphs.root,
+                //engine = navHostEngine,
+                navController = navController
+            ) {
                 composable(HomeScreenDestination) {
                     HomeScreen(navigator = destinationsNavigator)
                 }
@@ -55,6 +64,8 @@ fun MainRoot(finish: () -> Unit) {
                 }
             }
         }
+        //}
+
 
 /*        @Destination(style = DestinationStyle.BottomSheet::class)
         @Composable

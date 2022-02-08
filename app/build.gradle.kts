@@ -76,7 +76,8 @@ android {
             "-Xopt-in=kotlin.Experimental",
             "-Xjvm-default=all",
             "-Xopt-in=androidx.compose.material.ExperimentalMaterialApi",
-            "-Xopt-in=com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi"
+            "-Xopt-in=com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi",
+            "-Xopt-in=androidx.compose.animation.ExperimentalAnimationApi"
         )
     }
 

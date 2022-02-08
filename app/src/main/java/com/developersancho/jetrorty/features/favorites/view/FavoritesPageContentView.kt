@@ -26,7 +26,6 @@ fun FavoritesPageContentView(
             .fillMaxSize()
             .padding(top = 4.dp),
     ) {
-
         itemsIndexed(favors, key = { _, item -> item.id.orZero() }) { _, favor ->
             FavoriteRow(
                 dto = favor,
