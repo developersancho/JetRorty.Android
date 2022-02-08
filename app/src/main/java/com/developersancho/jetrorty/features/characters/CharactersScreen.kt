@@ -36,7 +36,7 @@ fun CharactersScreen(
                 viewModel = viewModel,
                 paddingValues = it,
                 viewState = uiState.cast<BaseViewState.Data<CharactersViewState>>().value,
-                selectItem = { navigator.navigate(DetailScreenDestination(id = it)) }
+                selectItem = { id -> navigator.navigate(DetailScreenDestination(id = id)) }
             )
             is BaseViewState.Empty -> EmptyView(modifier = modifier)
             is BaseViewState.Error -> ErrorView(
