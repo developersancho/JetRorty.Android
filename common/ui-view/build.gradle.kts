@@ -57,6 +57,9 @@ dependencies {
     implementation(project(Modules.Resource))
 
     implementation(Deps.AndroidX.CoreKtx)
+    implementation(Deps.AndroidX.Appcompat)
+    implementation(Deps.AndroidX.Material)
+
     testImplementation(Deps.Test.Junit)
     androidTestImplementation(Deps.Test.JunitExt)
     androidTestImplementation(Deps.Test.Espresso)

@@ -1,12 +1,12 @@
 package com.developersancho.jetrorty.features.main
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.appcompat.app.AppCompatActivity
 import com.developersancho.framework.extension.toast
 
 // todo: Splash Screen Api
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
 
     private var backPressed = 0L
 

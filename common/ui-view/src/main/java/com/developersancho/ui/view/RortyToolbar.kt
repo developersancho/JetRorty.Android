@@ -2,7 +2,6 @@ package com.developersancho.ui.view
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Icon
@@ -19,7 +18,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.developersancho.ui.theme.Black
 import com.developersancho.ui.theme.White
-
 
 @Composable
 fun RortyToolbar(
@@ -43,7 +41,7 @@ fun RortyToolbarWithNavIcon(
     @StringRes titleResId: Int,
     pressOnBack: () -> Unit
 ) {
-    val navIconTintColor = if (isSystemInDarkTheme()) White else Black
+    val navIconTintColor = if (!MaterialTheme.colors.isLight) White else Black
     TopAppBar(
         title = {
             Text(

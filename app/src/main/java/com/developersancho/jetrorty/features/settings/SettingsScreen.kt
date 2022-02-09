@@ -1,14 +1,17 @@
 package com.developersancho.jetrorty.features.settings
 
 import android.content.res.Configuration
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.Text
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.developersancho.jetrorty.features.settings.view.SettingsPageContentView
+import com.developersancho.ui.resource.R
 import com.developersancho.ui.theme.JetRortyTheme
+import com.developersancho.ui.view.RortyToolbar
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 import org.koin.androidx.compose.getViewModel
 
@@ -18,17 +21,23 @@ fun SettingsScreen(
     viewModel: SettingsViewModel = getViewModel(),
     navigator: DestinationsNavigator
 ) {
-    SettingsPage(modifier)
+    val checkedState = remember { mutableStateOf(viewModel.isNightMode()) }
+
+    SettingsPage(modifier) {
+        SettingsPageContentView(checkedState, viewModel)
+    }
 }
 
 @Composable
-private fun SettingsPage(modifier: Modifier = Modifier) {
-    Box(
-        modifier = modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(text = "Settings Screen")
-    }
+private fun SettingsPage(
+    modifier: Modifier = Modifier,
+    pageContent: @Composable (PaddingValues) -> Unit
+) {
+    Scaffold(
+        modifier = modifier,
+        topBar = { RortyToolbar(R.string.toolbar_settings_title) },
+        content = { pageContent.invoke(it) }
+    )
 }
 
 @Preview(showBackground = true, name = "Light Mode")
@@ -39,6 +48,6 @@ private fun SettingsPage(modifier: Modifier = Modifier) {
 @Composable
 fun SettingsScreenPreview() {
     JetRortyTheme {
-        SettingsPage()
+        SettingsPage {}
     }
 }

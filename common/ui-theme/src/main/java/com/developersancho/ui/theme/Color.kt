@@ -41,3 +41,6 @@ val Gray950 = Color(0xFF141414)
 
 val selectedBottomItemColor = Red
 val unselectedBottomItemColor = Gray500
+
+val navigationBackIconDark = White
+val navigationBackIconLight = Black

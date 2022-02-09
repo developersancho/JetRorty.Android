@@ -11,5 +11,5 @@ val viewModelModule = module {
     viewModel { CharactersViewModel(get(), get()) }
     viewModel { DetailViewModel(get(), get()) }
     viewModel { FavoritesViewModel(get(), get()) }
-    viewModel { SettingsViewModel() }
+    viewModel { SettingsViewModel(get()) }
 }

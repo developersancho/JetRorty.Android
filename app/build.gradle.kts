@@ -37,7 +37,7 @@ android {
         minSdk = 23
         targetSdk = 32
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
         multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -123,11 +123,15 @@ dependencies {
     implementation(Deps.Compose.MaterialIconExtended)
     implementation(Deps.Compose.Coil)
     implementation(Deps.Compose.Paging)
+    implementation(Deps.Compose.Constraintlayout)
 
     implementation(Deps.AndroidX.Paging)
 
     implementation(Deps.AndroidX.FragmentKtx)
     implementation(Deps.AndroidX.PlayCoreKtx)
+
+    implementation(Deps.AndroidX.Appcompat)
+    implementation(Deps.AndroidX.Material)
 
     testImplementation(Deps.Test.Junit)
     androidTestImplementation(Deps.Test.JunitExt)
