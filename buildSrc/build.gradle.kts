@@ -12,7 +12,7 @@ repositories {
 
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
-    languageVersion = "1.3"
+    languageVersion = "1.6"
 }
 
 object Versions {

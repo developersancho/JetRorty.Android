@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RortyCompose</string>
+    <string name="app_name">JetRorty.Android</string>
 
     <string name="pref_theme_light_value" translatable="false">light</string>
     <string name="pref_theme_dark_value" translatable="false">dark</string>

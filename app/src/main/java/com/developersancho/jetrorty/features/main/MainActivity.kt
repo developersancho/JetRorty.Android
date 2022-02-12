@@ -4,9 +4,10 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import com.developersancho.framework.extension.toast
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-// todo: Splash Screen Api
 class MainActivity : AppCompatActivity() {
+    private val viewModel by viewModel<MainViewModel>()
 
     private var backPressed = 0L
 

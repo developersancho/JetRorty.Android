@@ -30,14 +30,14 @@ kotlin {
 }*/
 
 android {
-    compileSdk = 32
+    compileSdk = Configs.CompileSdk
 
     defaultConfig {
-        applicationId = "com.developersancho.jetrorty"
-        minSdk = 23
-        targetSdk = 32
-        versionCode = 1
-        versionName = "1.0.0"
+        applicationId = Configs.Id
+        minSdk = Configs.MinSdk
+        targetSdk = Configs.TargetSdk
+        versionCode = Configs.VersionCode
+        versionName = Configs.VersionName
         multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -174,4 +174,7 @@ dependencies {
     implementation(Deps.AndroidX.Paging)
     releaseImplementation(Deps.Network.ReleaseChucker)
     debugImplementation(Deps.Network.DebugChucker)
+
+    implementation(Deps.AndroidX.SplashScreen)
+    implementation(Deps.Common.Timber)
 }

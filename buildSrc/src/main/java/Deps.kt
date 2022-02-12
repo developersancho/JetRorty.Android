@@ -11,7 +11,7 @@ object Deps {
         const val CoilCompose = "2.0.0-alpha06"
         const val NavigationCompose = "2.4.0"
 
-        const val Raamcosta = "1.2.2-beta"
+        const val Raamcosta = "1.3.1-beta"
 
         const val CoreKtx = "1.7.0"
         const val Coroutines = "1.6.0"
@@ -21,6 +21,7 @@ object Deps {
         const val FragmentKtx = "1.4.1"
         const val PlayCoreKtx = "1.8.1"
         const val Appcompat = "1.4.1"
+        const val SplashScreen = "1.0.0-beta01"
 
         const val Moshi = "1.13.0"
         const val MoshiAdapter = "2.2"
@@ -94,6 +95,7 @@ object Deps {
         const val PlayCoreKtx = "com.google.android.play:core-ktx:${Version.PlayCoreKtx}"
 
         const val Appcompat = "androidx.appcompat:appcompat:${Version.Appcompat}"
+        const val SplashScreen = "androidx.core:core-splashscreen:${Version.SplashScreen}"
     }
 
     object Network {

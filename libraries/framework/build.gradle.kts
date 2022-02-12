@@ -15,11 +15,11 @@ kotlin {
 }
 
 android {
-    compileSdk = 32
+    compileSdk = Configs.CompileSdk
 
     defaultConfig {
-        minSdk = 23
-        targetSdk = 32
+        minSdk = Configs.MinSdk
+        targetSdk = Configs.TargetSdk
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -72,6 +72,7 @@ dependencies {
     implementation(Deps.Compose.Ui)
     implementation(Deps.Compose.Material)
     implementation(Deps.Compose.Preview)
+    implementation(Deps.Compose.Foundation)
 
     implementation(Deps.AndroidX.FragmentKtx)
     implementation(Deps.AndroidX.LifecycleRuntime)
@@ -90,4 +91,8 @@ dependencies {
     ksp(Deps.Cache.RoomCompiler)
     implementation(Deps.Cache.DatastorePref)
     implementation(Deps.Cache.SecurityPref)
+
+    implementation(Deps.Accompanist.Insets)
+    implementation(Deps.Accompanist.Navigation)
+    implementation(Deps.Accompanist.Systemuicontroller)
 }

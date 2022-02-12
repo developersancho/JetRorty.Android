@@ -6,10 +6,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.developersancho.jetrorty.features.NavGraphs
@@ -33,17 +35,19 @@ import org.koin.core.parameter.parametersOf
 
 @Composable
 fun MainRoot(finish: () -> Unit) {
+    val navController = rememberNavController()
 
     val themeProvider: ThemeProvider = get()
     val isDarkMode = themeProvider.shouldUseDarkMode()
+
+    val currentBackStackEntryAsState by navController.currentBackStackEntryAsState()
+    val destination = currentBackStackEntryAsState?.navDestination
+        ?: NavGraphs.root.startRoute.startDestination
+
     JetRortyTheme(darkTheme = isDarkMode) {
         SetupSystemUi(rememberSystemUiController(), MaterialTheme.colors.primary)
 
         //val navHostEngine = rememberAnimatedNavHostEngine()
-        val navController = rememberNavController()
-        val currentBackStackEntryAsState by navController.currentBackStackEntryAsState()
-        val destination = currentBackStackEntryAsState?.navDestination
-            ?: NavGraphs.root.startRoute.startDestination
 
         if (destination == NavGraphs.root.startRoute.startDestination) {
             BackHandler { finish() }

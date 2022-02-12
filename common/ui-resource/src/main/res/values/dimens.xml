@@ -18,4 +18,6 @@
     <dimen name="radius_xl">32dp</dimen>
     <dimen name="radius_xxl">45dp</dimen>
     <dimen name="radius_circular">90dp</dimen>
+
+    <dimen name="splashscreen_icon_size_default">350dp</dimen>
 </resources>
