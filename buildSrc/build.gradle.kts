@@ -12,11 +12,11 @@ repositories {
 
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
-    languageVersion = "1.3"
+    languageVersion = "1.6"
 }
 
 object Versions {
-    const val GRADLE = "7.1.0"
+    const val GRADLE = "7.1.1"
     const val KOTLIN = "1.6.10"
     const val KSP = "1.6.10-1.0.2"
     const val VERSION_CHECKER = "0.41.0"
@@ -32,6 +32,7 @@ object Deps {
     const val KTLINT = "org.jlleitschuh.gradle:ktlint-gradle:${Versions.KTLINT}"
     const val SPOTLESS = "com.diffplug.spotless:spotless-plugin-gradle:${Versions.SPOTLESS}"
     const val DETEKT = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${Versions.DETEKT}"
+    const val KSP = "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:${Versions.KSP}"
 }
 
 dependencies {

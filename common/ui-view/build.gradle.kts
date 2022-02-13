@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk = 32
+    compileSdk = Configs.CompileSdk
 
     defaultConfig {
-        minSdk = 23
-        targetSdk = 32
+        minSdk = Configs.MinSdk
+        targetSdk = Configs.TargetSdk
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -53,7 +53,13 @@ android {
 }
 
 dependencies {
+    implementation(project(Modules.Theme))
+    implementation(project(Modules.Resource))
+
     implementation(Deps.AndroidX.CoreKtx)
+    implementation(Deps.AndroidX.Appcompat)
+    implementation(Deps.AndroidX.Material)
+
     testImplementation(Deps.Test.Junit)
     androidTestImplementation(Deps.Test.JunitExt)
     androidTestImplementation(Deps.Test.Espresso)
@@ -61,4 +67,15 @@ dependencies {
     implementation(Deps.Compose.Ui)
     implementation(Deps.Compose.Material)
     implementation(Deps.Compose.Preview)
+
+    implementation(Deps.Compose.Foundation)
+    implementation(Deps.Compose.MaterialIconCore)
+    implementation(Deps.Compose.MaterialIconExtended)
+    implementation(Deps.Compose.Coil)
+
+    implementation(Deps.Accompanist.Insets)
+    implementation(Deps.Accompanist.Navigation)
+    implementation(Deps.Accompanist.Systemuicontroller)
+    implementation(Deps.Accompanist.Swiperefresh)
+    implementation(Deps.Accompanist.Placeholder)
 }

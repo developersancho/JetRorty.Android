@@ -30,14 +30,14 @@ kotlin {
 }*/
 
 android {
-    compileSdk = 32
+    compileSdk = Configs.CompileSdk
 
     defaultConfig {
-        applicationId = "com.developersancho.jetrorty"
-        minSdk = 23
-        targetSdk = 32
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = Configs.Id
+        minSdk = Configs.MinSdk
+        targetSdk = Configs.TargetSdk
+        versionCode = Configs.VersionCode
+        versionName = Configs.VersionName
         multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -75,7 +75,9 @@ android {
             "-Xopt-in=kotlinx.coroutines.FlowPreview",
             "-Xopt-in=kotlin.Experimental",
             "-Xjvm-default=all",
-            "-Xopt-in=androidx.compose.material.ExperimentalMaterialApi"
+            "-Xopt-in=androidx.compose.material.ExperimentalMaterialApi",
+            "-Xopt-in=com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi",
+            "-Xopt-in=androidx.compose.animation.ExperimentalAnimationApi"
         )
     }
 
@@ -116,9 +118,20 @@ dependencies {
     implementation(Deps.Compose.Preview)
     implementation(Deps.AndroidX.LifecycleRuntime)
     implementation(Deps.Compose.Activity)
+    implementation(Deps.Compose.Foundation)
+    implementation(Deps.Compose.MaterialIconCore)
+    implementation(Deps.Compose.MaterialIconExtended)
+    implementation(Deps.Compose.Coil)
+    implementation(Deps.Compose.Paging)
+    implementation(Deps.Compose.Constraintlayout)
+
+    implementation(Deps.AndroidX.Paging)
 
     implementation(Deps.AndroidX.FragmentKtx)
     implementation(Deps.AndroidX.PlayCoreKtx)
+
+    implementation(Deps.AndroidX.Appcompat)
+    implementation(Deps.AndroidX.Material)
 
     testImplementation(Deps.Test.Junit)
     androidTestImplementation(Deps.Test.JunitExt)
@@ -126,6 +139,11 @@ dependencies {
 
     androidTestImplementation(Deps.Compose.Junit4)
     debugImplementation(Deps.Compose.DebugTooling)
+
+    implementation(Deps.Accompanist.Insets)
+    implementation(Deps.Accompanist.Navigation)
+    implementation(Deps.Accompanist.Systemuicontroller)
+    implementation(Deps.Accompanist.Swiperefresh)
 
     implementation(Deps.Cache.DatastorePref)
     implementation(Deps.Cache.SecurityPref)
@@ -142,6 +160,9 @@ dependencies {
     implementation(Deps.Network.OkhttpInterceptor)
     testImplementation(Deps.Network.OkhttpMock)
 
+    implementation(Deps.AndroidX.CoroutinesAndroid)
+    implementation(Deps.AndroidX.CoroutinesCore)
+
     implementation(Deps.Navigation.Core)
     ksp(Deps.Navigation.Compiler)
     implementation(Deps.Navigation.Animation)
@@ -153,4 +174,7 @@ dependencies {
     implementation(Deps.AndroidX.Paging)
     releaseImplementation(Deps.Network.ReleaseChucker)
     debugImplementation(Deps.Network.DebugChucker)
+
+    implementation(Deps.AndroidX.SplashScreen)
+    implementation(Deps.Common.Timber)
 }
