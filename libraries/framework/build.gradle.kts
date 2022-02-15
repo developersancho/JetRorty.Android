@@ -32,10 +32,6 @@ android {
                     "proguard-rules.pro"
             )
         }
-
-        debug {
-
-        }
     }
 
     compileOptions {
@@ -45,6 +41,7 @@ android {
 
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
+        freeCompilerArgs = Configs.FreeCompilerArgs
     }
 
     buildFeatures {
@@ -64,6 +61,8 @@ android {
 }
 
 dependencies {
+    testImplementation(project(Modules.Testing))
+
     implementation(Deps.AndroidX.CoreKtx)
     testImplementation(Deps.Test.Junit)
     androidTestImplementation(Deps.Test.JunitExt)
