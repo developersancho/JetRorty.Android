@@ -48,11 +48,13 @@ android {
 
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
+        freeCompilerArgs = Configs.FreeCompilerArgs
     }
 }
 
 dependencies {
     implementation(project(Modules.Framework))
+    testImplementation(project(Modules.Testing))
 
     implementation(Deps.AndroidX.CoreKtx)
     testImplementation(Deps.Test.Junit)

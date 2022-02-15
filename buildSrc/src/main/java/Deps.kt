@@ -33,11 +33,19 @@ object Deps {
         const val Datastore = "1.0.0"
         const val Koin = "3.1.5"
         const val Timber = "5.0.1"
-        const val Robolectric = "4.7.3"
+        const val Robolectric = "4.4"
         const val Truth = "1.1.3"
         const val Junit = "4.13.2"
         const val JunitExt = "1.1.3"
         const val Espresso = "3.4.0"
+        const val Assertj = "3.21.0"
+        const val Test = "1.4.0"
+        const val Hamcrest = "2.2"
+        const val Json = "20210307"
+        const val Turbine = "0.7.0"
+        const val Mockk = "1.12.1"
+        const val MockitoInline = "2.13.0"
+        const val MockitoKotlin = "2.1.0"
     }
 
     object Compose {
@@ -146,5 +154,15 @@ object Deps {
         const val Junit = "junit:junit:${Version.Junit}"
         const val JunitExt = "androidx.test.ext:junit:${Version.JunitExt}"
         const val Espresso = "androidx.test.espresso:espresso-core:${Version.Espresso}"
+        const val Turbine = "app.cash.turbine:turbine:${Version.Turbine}"
+        const val TestCore = "androidx.test:core:${Version.Test}"
+        const val TestRunner = "androidx.test:runner:${Version.Test}"
+        const val TestRules = "androidx.test:rules:${Version.Test}"
+        const val Hamcrest = "org.hamcrest:hamcrest-library:${Version.Hamcrest}"
+        const val Json = "org.json:json:${Version.Json}"
+        const val Assertj = "org.assertj:assertj-core:${Version.Assertj}"
+        const val Mockk = "io.mockk:mockk:${Version.Mockk}"
+        const val MockitoInline = "org.mockito:mockito-inline:${Version.MockitoInline}"
+        const val MockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:${Version.MockitoKotlin}"
     }
 }
