@@ -95,6 +95,7 @@ dependencies {
     implementation(project(Modules.Theme))
     implementation(project(Modules.Resource))
     implementation(project(Modules.View))
+    implementation(project(Modules.Provider))
 
     implementation(project(Modules.Model))
     implementation(project(Modules.Remote))
@@ -102,11 +103,17 @@ dependencies {
     implementation(project(Modules.Repository))
     implementation(project(Modules.Domain))
 
-    implementation(Deps.AndroidX.CoreKtx)
+    implementation(project(Modules.Splash))
+    implementation(project(Modules.Characters))
+    implementation(project(Modules.Detail))
+    implementation(project(Modules.Favorites))
+    implementation(project(Modules.Settings))
+    implementation(project(Modules.Main))
+    implementation(project(Modules.Home))
+
     implementation(Deps.Compose.Ui)
     implementation(Deps.Compose.Material)
     implementation(Deps.Compose.Preview)
-    implementation(Deps.AndroidX.LifecycleRuntime)
     implementation(Deps.Compose.Activity)
     implementation(Deps.Compose.Foundation)
     implementation(Deps.Compose.MaterialIconCore)
@@ -115,11 +122,11 @@ dependencies {
     implementation(Deps.Compose.Paging)
     implementation(Deps.Compose.Constraintlayout)
 
+    implementation(Deps.AndroidX.CoreKtx)
+    implementation(Deps.AndroidX.LifecycleRuntime)
     implementation(Deps.AndroidX.Paging)
-
     implementation(Deps.AndroidX.FragmentKtx)
     implementation(Deps.AndroidX.PlayCoreKtx)
-
     implementation(Deps.AndroidX.Appcompat)
     implementation(Deps.AndroidX.Material)
 

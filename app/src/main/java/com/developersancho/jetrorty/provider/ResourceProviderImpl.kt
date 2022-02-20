@@ -1,6 +1,7 @@
 package com.developersancho.jetrorty.provider
 
 import android.content.Context
+import com.developersancho.provider.ResourceProvider
 
 class ResourceProviderImpl(private val context: Context) : ResourceProvider {
     override fun getString(id: Int): String {

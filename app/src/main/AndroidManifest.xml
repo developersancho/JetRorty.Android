@@ -20,7 +20,7 @@
         tools:targetApi="s">
 
         <activity
-            android:name=".features.splash.InitActivity"
+            android:name="com.developersancho.splash.InitActivity"
             android:exported="true"
             android:theme="@style/Theme.Starting">
             <intent-filter>
@@ -31,9 +31,7 @@
 
         </activity>
 
-        <activity android:name=".features.main.MainActivity">
-
-        </activity>
+        <activity android:name="com.developersancho.main.MainActivity" />
 
     </application>
 
