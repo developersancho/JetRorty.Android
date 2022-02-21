@@ -1,8 +1,8 @@
 object Deps {
 
     object Version {
-        const val Accompanist = "0.22.0-rc"
-        const val Compose = "1.1.0-rc03"
+        const val Accompanist = "0.23.0"
+        const val Compose = "1.1.0"
         const val ActivityCompose = "1.4.0"
         const val ViewModelCompose = "2.4.0"
         const val LottieCompose = "4.2.2"
@@ -98,6 +98,7 @@ object Deps {
         const val Material = "com.google.android.material:material:${Version.Material}"
 
         const val LifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Version.Lifecycle}"
+        const val ViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Version.Lifecycle}"
 
         const val FragmentKtx = "androidx.fragment:fragment-ktx:${Version.FragmentKtx}"
         const val PlayCoreKtx = "com.google.android.play:core-ktx:${Version.PlayCoreKtx}"
@@ -145,6 +146,15 @@ object Deps {
         const val Compiler = "io.github.raamcosta.compose-destinations:ksp:${Version.Raamcosta}"
         const val Animation =
             "io.github.raamcosta.compose-destinations:animations-core:${Version.Raamcosta}"
+    }
+
+    object Firebase {
+        const val bom = "com.google.firebase:firebase-bom:29.0.3"
+        const val messaging = "com.google.firebase:firebase-messaging-ktx"
+        const val remoteConfig = "com.google.firebase:firebase-config-ktx"
+        const val analytics = "com.google.firebase:firebase-analytics-ktx"
+        const val crashlytics = "com.google.firebase:firebase-crashlytics-ktx"
+        const val crashlyticsGradle = "com.google.firebase:firebase-crashlytics-gradle:2.8.1"
     }
 
     object Test {

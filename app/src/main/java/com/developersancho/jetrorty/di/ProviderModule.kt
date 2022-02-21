@@ -1,9 +1,9 @@
 package com.developersancho.jetrorty.di
 
-import com.developersancho.jetrorty.provider.ResourceProvider
 import com.developersancho.jetrorty.provider.ResourceProviderImpl
-import com.developersancho.jetrorty.provider.ThemeProvider
 import com.developersancho.jetrorty.provider.ThemeProviderImpl
+import com.developersancho.provider.ResourceProvider
+import com.developersancho.provider.ThemeProvider
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 

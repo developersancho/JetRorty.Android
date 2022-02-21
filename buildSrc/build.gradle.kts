@@ -38,8 +38,8 @@ object Deps {
 dependencies {
 //    implementation(gradleApi())
 //    implementation(localGroovy())
-    implementation(Deps.ANDROID_GRADLE)
-    implementation(Deps.KOTLIN_GRADLE)
+//    implementation(Deps.ANDROID_GRADLE)
+//    implementation(Deps.KOTLIN_GRADLE)
 //    implementation(Deps.VERSION_CHECKER)
 //    implementation(Deps.KTLINT)
 //    implementation(Deps.SPOTLESS)

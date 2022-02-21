@@ -9,4 +9,12 @@ object Modules {
     const val Local = ":data:local"
     const val Repository = ":data:repository"
     const val Domain = ":domain"
+    const val Splash = ":features:splash"
+    const val Characters = ":features:characters"
+    const val Detail = ":features:detail"
+    const val Favorites = ":features:favorites"
+    const val Settings = ":features:settings"
+    const val Main = ":features:main"
+    const val Home = ":features:home"
+    const val Provider = ":common:provider"
 }

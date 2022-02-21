@@ -2,14 +2,14 @@ package com.developersancho.jetrorty.provider
 
 import android.content.Context
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
-import com.developersancho.framework.pref.getPrefs
-import kotlinx.coroutines.flow.*
-import com.developersancho.ui.resource.R
 import androidx.core.content.edit
+import com.developersancho.framework.pref.getPrefs
+import com.developersancho.provider.ThemeProvider
+import com.developersancho.ui.resource.R
+import kotlinx.coroutines.flow.*
 
 class ThemeProviderImpl constructor(
     private val context: Context
@@ -73,16 +73,4 @@ class ThemeProviderImpl constructor(
             ThemeProvider.Theme.LIGHT
         }
     }
-}
-
-@Composable
-fun ThemeProvider.shouldUseDarkMode(): Boolean {
-    val themePreference = observeTheme().collectAsState(initial = ThemeProvider.Theme.SYSTEM)
-    val mode = when (themePreference.value) {
-        ThemeProvider.Theme.LIGHT -> false
-        ThemeProvider.Theme.DARK -> true
-        else -> isSystemInDarkTheme()
-    }
-    setNightMode(mode)
-    return mode
 }

@@ -36,4 +36,11 @@ class CacheStore(context: Context, fileName: String) {
             else -> Unit
         }
     }
+
+    suspend fun clearAll() {
+        dataStore.edit { preferences ->
+            preferences.clear()
+        }
+    }
+
 }

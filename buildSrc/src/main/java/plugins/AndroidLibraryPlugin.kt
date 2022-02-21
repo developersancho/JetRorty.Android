@@ -1,5 +1,6 @@
 package plugins
 
+/*
 import com.android.build.gradle.BaseExtension
 import com.android.build.gradle.LibraryExtension
 import org.gradle.api.JavaVersion
@@ -88,4 +89,4 @@ class AndroidLibraryPlugin : Plugin<Project> {
 //    private fun BuildType.buildConfigStringField(name: String, value: String) {
 //        this.buildConfigField("String", name, "\"$value\"")
 //    }
-}
+}*/
