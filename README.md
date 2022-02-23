@@ -20,7 +20,7 @@ long application lifecycle management.
 
 An android app built using Kotlin that consumes [Rick and Morty API](https://rickandmortyapi.com) to display characters,episodes,Location from the [TV Series](https://www.imdb.com/title/tt2861424/). It has been built following Clean Architecture Principle, Repository Pattern, MVVM Architecture in the presentation layer as well as Jetpack components.
 
-[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="200">](https://github.com/developersancho/Rorty.Native.Android)
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="200">](https://github.com/developersancho/JetRorty.Android)
 
 ## Environment Setup
 
@@ -69,20 +69,20 @@ The ```buildSrc``` layer is responsible for dependency management. It control an
 ### Common
 The ```common``` layer is responsible for common properties. It contains the implementations of the resources files, themes and components declared in the common layer.
 
--__provider__: Defines navigation, resource and theme provider.
+- __provider__: Defines navigation, resource and theme provider.
 
--__ui-resource__: Defines the resource files.
+- __ui-resource__: Defines the resource files.
 
--__ui-theme__: Defines themes, colors, fonts.
+- __ui-theme__: Defines themes, colors, fonts.
 
--__ui-view__: This is responsible for common view components that using app.
+- __ui-view__: This is responsible for common view components that using app.
 
 ### Libraries
 The ```libraries``` layer is responsible for base structure.
 
--__framework__: Contains different utilities that can be used by the different modules and base structures.
+- __framework__: Contains different utilities that can be used by the different modules and base structures.
 
--__testing__: Contains the definitions of the test utilities.
+- __testing__: Contains the definitions of the test utilities.
 
 ### Data
 The ```data``` layer is responsible for selecting the proper data source for the domain layer. It contains the implementations of the repositories declared in the domain layer.
@@ -109,7 +109,7 @@ Components of domain layer include:
 - __usecase__: They enclose a single action, like getting data from a database or posting to a service. They use the repositories to resolve the action they are supposed to do. They usually override the operator ```invoke``` , so they can be called as a function.
 
 ### Presentation
-The ```features``` layer contains components involved in showing information to the user. The main part of this layer are the views(activity, fragment) and ViewModels.
+The ```features``` layer contains components involved in showing information to the user. The main part of this layer are the views(activity, compose) and ViewModels.
 
 ## Demo Screenshots
 
