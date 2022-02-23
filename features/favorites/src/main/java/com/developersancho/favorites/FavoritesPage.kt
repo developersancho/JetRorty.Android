@@ -24,10 +24,7 @@ import com.developersancho.model.dto.CharacterDto
 import com.developersancho.provider.NavigationProvider
 import com.developersancho.ui.resource.R
 import com.developersancho.ui.theme.JetRortyTheme
-import com.developersancho.ui.view.EmptyView
-import com.developersancho.ui.view.ErrorView
-import com.developersancho.ui.view.LoadingView
-import com.developersancho.ui.view.RortyToolbar
+import com.developersancho.ui.view.*
 import kotlinx.coroutines.launch
 import org.koin.androidx.compose.getViewModel
 
@@ -79,8 +76,8 @@ fun FavoritesPage(
                         }
                     }
                 )
-                is BaseViewState.Empty -> EmptyView(modifier = modifier)
-                is BaseViewState.Error -> ErrorView(
+                is BaseViewState.Empty -> LottieEmptyView(modifier = modifier)
+                is BaseViewState.Error -> LottieErrorView(
                     modifier = modifier,
                     e = uiState.cast<BaseViewState.Error>().throwable,
                     action = {

@@ -97,6 +97,7 @@ fun DependencyHandler.addComposeDependencies() {
     implementation(Deps.Compose.MaterialIconExtended)
     implementation(Deps.Compose.Coil)
     implementation(Deps.Compose.Paging)
+    implementation(Deps.Compose.Lottie)
     implementation(Deps.Compose.Constraintlayout)
 
     androidTestImplementation(Deps.Compose.Junit4)
