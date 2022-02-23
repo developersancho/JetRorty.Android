@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.jetrorty
 
 import android.app.Application
@@ -7,7 +11,7 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 
-class JetRortyApp: Application() {
+class JetRortyApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
@@ -19,5 +23,4 @@ class JetRortyApp: Application() {
         androidContext(applicationContext)
         modules(appModule)
     }
-
 }

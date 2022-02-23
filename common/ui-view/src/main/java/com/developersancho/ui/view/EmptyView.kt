@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.ui.view
 
 import android.content.res.Configuration
@@ -43,7 +47,6 @@ fun EmptyView(modifier: Modifier = Modifier) {
                 .fillMaxWidth()
         )
     }
-
 }
 
 @Preview(showBackground = true, name = "Light Mode")

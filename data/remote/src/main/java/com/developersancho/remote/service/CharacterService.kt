@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.remote.service
 
 import com.developersancho.model.remote.character.CharacterInfo

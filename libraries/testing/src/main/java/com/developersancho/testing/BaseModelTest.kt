@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.testing
 
 import android.annotation.SuppressLint
@@ -6,16 +10,14 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import org.hamcrest.CoreMatchers
 import org.hamcrest.MatcherAssert
 import org.hamcrest.Matchers
-import org.json.JSONException
 import org.json.JSONObject
-import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.BlockJUnit4ClassRunner
 import java.lang.reflect.Constructor
-
+@Suppress("SpreadOperator")
 @RunWith(BlockJUnit4ClassRunner::class)
-abstract class BaseModelTest: BaseMockTest() {
+abstract class BaseModelTest : BaseMockTest() {
     private val parameters = ArrayList<String>()
 
     abstract fun checkModelClass(): Class<*>

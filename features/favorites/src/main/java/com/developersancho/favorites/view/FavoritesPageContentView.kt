@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.favorites.view
 
 import android.content.res.Configuration
@@ -35,7 +39,8 @@ fun FavoritesPageContentView(
                 onDeleteClick = {
                     selectedFavorite.value = favor
                     onDeleteItem.invoke(favor.id.orZero())
-                })
+                }
+            )
         }
     }
 }
@@ -92,7 +97,8 @@ fun FavoritesPageContentViewPreview() {
                     type = null,
                     url = null
                 )
-            ), selectedFavorite = selectedFavor
+            ),
+            selectedFavorite = selectedFavor
         )
     }
 }

@@ -17,4 +17,5 @@ object Modules {
     const val Main = ":features:main"
     const val Home = ":features:home"
     const val Provider = ":common:provider"
+    const val CodeAnalyzeTools = ":libraries:code-analyze-tools"
 }

@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.detail
 
 import android.content.res.Configuration
@@ -44,10 +48,12 @@ fun DetailPage(
                     e = uiState.cast<BaseViewState.Error>().throwable,
                     action = {
                         viewModel.onTriggerEvent(DetailEvent.LoadDetail(id))
-                    })
+                    }
+                )
                 is BaseViewState.Loading -> LoadingView()
             }
-        })
+        }
+    )
 
     LaunchedEffect(key1 = viewModel, block = {
         viewModel.onTriggerEvent(DetailEvent.LoadDetail(id))

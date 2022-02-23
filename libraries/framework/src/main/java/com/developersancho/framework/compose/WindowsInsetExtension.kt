@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.compose
 
 import androidx.compose.foundation.background
@@ -48,7 +52,6 @@ fun ScaffoldWithInset(
     contentColor: Color = contentColorFor(backgroundColor),
     content: @Composable (PaddingValues) -> Unit
 ) {
-
     androidx.compose.material.Scaffold(
         modifier = modifier,
         scaffoldState = scaffoldState,

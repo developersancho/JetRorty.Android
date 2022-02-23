@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.main
 
 import androidx.activity.compose.BackHandler
@@ -51,7 +55,6 @@ fun MainRoot(finish: () -> Unit) {
             )
         }
     }
-
 }
 
 @Composable

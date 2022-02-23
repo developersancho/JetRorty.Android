@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.internet
 
 import android.annotation.SuppressLint
@@ -30,7 +34,6 @@ object ConnectedCompat {
         @Suppress("DEPRECATION")
         override fun isConnected(connectivityManager: ConnectivityManager): Boolean =
             connectivityManager.activeNetworkInfo?.isConnected ?: false
-
     }
 
     object MarshMallowImpl : ConnectedCompatImpl {

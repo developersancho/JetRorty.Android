@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.repository.episode
 
 import com.developersancho.remote.service.EpisodeService
@@ -9,7 +13,7 @@ import kotlinx.coroutines.test.runTest
 import org.junit.Assert
 import org.junit.Test
 
-class EpisodeRepositoryTest: BaseMockTest() {
+class EpisodeRepositoryTest : BaseMockTest() {
 
     @MockK(relaxed = true)
     lateinit var service: EpisodeService

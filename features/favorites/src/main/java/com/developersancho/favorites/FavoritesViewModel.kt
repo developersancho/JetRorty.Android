@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.favorites
 
 import com.developersancho.domain.usecase.favorite.DeleteFavorite

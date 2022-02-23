@@ -1,10 +1,11 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.jetrorty.provider
 
 import android.content.Context
 import android.content.SharedPreferences
-import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
 import androidx.core.content.edit
 import com.developersancho.framework.pref.getPrefs
 import com.developersancho.provider.ThemeProvider
@@ -51,7 +52,6 @@ class ThemeProviderImpl constructor(
     override fun isNightMode(): Boolean {
         return theme == ThemeProvider.Theme.DARK
     }
-
 
     private val ThemeProvider.Theme.storageKey: String
         get() = when (this) {

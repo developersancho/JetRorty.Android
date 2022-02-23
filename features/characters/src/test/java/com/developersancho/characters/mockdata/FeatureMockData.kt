@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.characters.mockdata
 
 import com.developersancho.model.dto.CharacterDto

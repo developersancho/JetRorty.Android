@@ -55,6 +55,8 @@ object Deps {
         const val DebugTooling = "androidx.compose.ui:ui-tooling:${Version.Compose}"
         const val Junit4 = "androidx.compose.ui:ui-test-junit4:${Version.Compose}"
 
+        const val Runtime = "androidx.compose.runtime:runtime:${Version.Compose}"
+
         const val Foundation = "androidx.compose.foundation:foundation:${Version.Compose}"
         const val MaterialIconCore =
             "androidx.compose.material:material-icons-core:${Version.Compose}"

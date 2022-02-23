@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.compose
 
 import android.annotation.SuppressLint
@@ -10,7 +14,6 @@ import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.collectLatest
-
 
 @Composable
 fun <T> rememberFlowWithLifecycle(
@@ -35,7 +38,6 @@ fun <T> rememberSaveableFlowWithLifecycle(
         minActiveState = minActiveState
     )
 }
-
 
 @SuppressLint("StateFlowValueCalledInComposition") // only used as initial value
 @Composable

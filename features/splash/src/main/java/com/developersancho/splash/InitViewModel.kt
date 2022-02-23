@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.splash
 
 import androidx.lifecycle.ViewModel
@@ -7,7 +11,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-class InitViewModel: ViewModel() {
+class InitViewModel : ViewModel() {
     private val _appIsReady = MutableStateFlow(false)
     val appIsReady = _appIsReady.asStateFlow()
 

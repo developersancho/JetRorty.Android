@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.repository.location
 
 import com.developersancho.remote.service.LocationService
@@ -9,7 +13,7 @@ import kotlinx.coroutines.test.runTest
 import org.junit.Assert
 import org.junit.Test
 
-class LocationRepositoryTest: BaseMockTest() {
+class LocationRepositoryTest : BaseMockTest() {
 
     @MockK(relaxed = true)
     lateinit var service: LocationService

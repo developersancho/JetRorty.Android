@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.model.remote.episode
 
 import com.developersancho.model.remote.base.PageInfo

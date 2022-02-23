@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.favorites.view
 
 import android.content.res.Configuration
@@ -30,7 +34,6 @@ fun FavoriteRow(
     onDetailClick: () -> Unit = {},
     onDeleteClick: () -> Unit = {}
 ) {
-
     Card(
         onClick = onDetailClick,
         modifier = modifier
@@ -80,7 +83,6 @@ fun FavoriteRow(
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
-
                     Row(
                         horizontalArrangement = Arrangement.spacedBy(8.dp),
                         verticalAlignment = Alignment.CenterVertically,
@@ -110,7 +112,6 @@ fun FavoriteRow(
                 )
             }
         }
-
     }
 }
 
@@ -121,7 +122,6 @@ private fun CharacterStatusDotView(character: CharacterDto) {
         isDead = character.status == Status.Dead
     )
 }
-
 
 @Composable
 private fun CharacterStatusDotContentView(

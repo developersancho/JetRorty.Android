@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.detail.detail
 
 import app.cash.turbine.test
@@ -83,6 +87,6 @@ class DetailViewModelTest : BaseMockTest() {
         coVerify(exactly = 1) { getCharacterDetail(any()) }
         confirmVerified(getCharacterDetail)
 
-        //assertThrows<RuntimeException> { viewModel.uiState as BaseViewState.Error }
+        // assertThrows<RuntimeException> { viewModel.uiState as BaseViewState.Error }
     }
 }

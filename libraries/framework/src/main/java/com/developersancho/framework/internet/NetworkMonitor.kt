@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.internet
 
 import android.annotation.SuppressLint
@@ -11,19 +15,19 @@ import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 
-//@HiltViewModel
-//class MyViewModel @Inject constructor(
+// @HiltViewModel
+// class MyViewModel @Inject constructor(
 //    val networkMonitor: NetworkMonitor
-//) : ViewModel()
-//@Composable
-//fun MyScreen(
+// ) : ViewModel()
+// @Composable
+// fun MyScreen(
 //    model: MyViewModel = hiltViewModel()
-//) {
+// ) {
 //    val hasNetwork by model.networkMonitor.isConnected.collectAsState(true)
 //    if (!hasNetwork) {
 //        Text("You don't have a network ")
 //    }
-//}
+// }
 
 class NetworkMonitor(private val context: Context) {
 
@@ -60,5 +64,4 @@ class NetworkMonitor(private val context: Context) {
             connectivityManager.unregisterNetworkCallback(callback)
         }
     }
-
 }

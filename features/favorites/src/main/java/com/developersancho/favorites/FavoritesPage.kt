@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.favorites
 
 import android.content.res.Configuration
@@ -81,10 +85,12 @@ fun FavoritesPage(
                     e = uiState.cast<BaseViewState.Error>().throwable,
                     action = {
                         viewModel.onTriggerEvent(FavoritesEvent.LoadFavorite)
-                    })
+                    }
+                )
                 is BaseViewState.Loading -> LoadingView()
             }
-        })
+        }
+    )
 
     SideEffect {
         viewModel.onTriggerEvent(FavoritesEvent.LoadFavorite)
@@ -121,6 +127,5 @@ private fun FavoritesPage(
 @Composable
 fun FavoritesScreenPreview() {
     JetRortyTheme {
-
     }
 }

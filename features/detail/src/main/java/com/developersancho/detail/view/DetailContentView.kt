@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.detail.view
 
 import android.content.res.Configuration
@@ -36,7 +40,7 @@ fun DetailContentView(list: List<KeyValueModel>, character: CharacterDto) {
             ) {
                 DetailCharacterStatusView(character = character)
 
-                list.forEachIndexed { index, it ->
+                list.forEachIndexed { _, it ->
                     Column {
                         DetailTextRowView(it)
 
@@ -74,7 +78,6 @@ private fun DetailTextRowView(model: KeyValueModel) {
             textAlign = TextAlign.End
         )
     }
-
 }
 
 @Composable
@@ -102,6 +105,7 @@ fun CharacterStatusDotView(character: CharacterDto) {
         isDead = character.status == Status.Dead
     )
 }
+
 @Composable
 private fun CharacterStatusDotContentView(
     isAlive: Boolean,
@@ -155,7 +159,8 @@ fun DetailContentItemViewPreview() {
                     key = "Location",
                     value = "Istanbul"
                 )
-            ), CharacterDto.init()
+            ),
+            CharacterDto.init()
         )
     }
 }

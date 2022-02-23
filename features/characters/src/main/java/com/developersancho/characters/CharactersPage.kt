@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.characters
 
 import android.content.res.Configuration
@@ -42,7 +46,8 @@ fun CharactersPage(
                 e = uiState.cast<BaseViewState.Error>().throwable,
                 action = {
                     viewModel.onTriggerEvent(CharactersEvent.LoadCharacters)
-                })
+                }
+            )
             is BaseViewState.Loading -> LoadingView()
         }
     })
@@ -51,7 +56,6 @@ fun CharactersPage(
         viewModel.onTriggerEvent(CharactersEvent.LoadCharacters)
     })
 }
-
 
 @Composable
 private fun CharactersPage(

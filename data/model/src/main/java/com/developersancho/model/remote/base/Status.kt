@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.model.remote.base
 
 import com.developersancho.framework.network.moshi.IValueEnum

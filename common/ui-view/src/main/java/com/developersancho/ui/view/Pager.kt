@@ -1,6 +1,9 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.ui.view
 
-import android.content.res.Configuration
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.SpringSpec
@@ -339,6 +342,5 @@ fun PagerPreview() {
                 }
             }
         )
-
     }
 }

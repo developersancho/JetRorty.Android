@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.remote.di
 
 import android.content.Context
@@ -65,7 +69,6 @@ fun remoteModule() = module {
         )
     }
 }
-
 
 fun provideBaseUrl(): String {
     return BuildConfig.BASE_URL

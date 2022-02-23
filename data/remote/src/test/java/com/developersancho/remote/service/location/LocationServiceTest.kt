@@ -1,5 +1,7 @@
-@file:Suppress("BlockingMethodInNonBlockingContext")
-
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.remote.service.location
 
 import com.developersancho.remote.BuildConfig

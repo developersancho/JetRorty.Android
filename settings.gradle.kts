@@ -1,4 +1,5 @@
 pluginManagement {
+    // includeBuild("libraries/code-analyze-tools")
     repositories {
         gradlePluginPortal()
         google()
@@ -37,3 +38,5 @@ include(":features:settings")
 include(":features:main")
 include(":features:home")
 include(":common:provider")
+include(":libraries:code-analyze-tools")
+// includeBuild("code-analyze-tools")

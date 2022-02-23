@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.settings.view
 
 import androidx.compose.foundation.layout.*
@@ -43,8 +47,10 @@ fun SettingsPageContentView(
                 modifier = Modifier
                     .padding(16.dp)
             ) {
-                val (viewDivider, lblThemeMode, switchThemeMode,
-                    lblAppVersion, tvAppVersion) = createRefs()
+                val (
+                    viewDivider, lblThemeMode, switchThemeMode,
+                    lblAppVersion, tvAppVersion
+                ) = createRefs()
 
                 Text(
                     text = stringResource(id = R.string.text_theme_mode),
@@ -52,7 +58,8 @@ fun SettingsPageContentView(
                     modifier = Modifier.constrainAs(lblThemeMode) {
                         top.linkTo(parent.top)
                         start.linkTo(parent.start)
-                    })
+                    }
+                )
 
                 AndroidView(
                     factory = { context ->
@@ -71,14 +78,15 @@ fun SettingsPageContentView(
                     }
                 )
 
-                RortyDivider(modifier = Modifier
-                    .padding(top = 12.dp, bottom = 12.dp)
-                    .constrainAs(viewDivider) {
-                        start.linkTo(parent.start)
-                        end.linkTo(parent.end)
-                        top.linkTo(lblThemeMode.bottom)
-                        height = Dimension.fillToConstraints
-                    }
+                RortyDivider(
+                    modifier = Modifier
+                        .padding(top = 12.dp, bottom = 12.dp)
+                        .constrainAs(viewDivider) {
+                            start.linkTo(parent.start)
+                            end.linkTo(parent.end)
+                            top.linkTo(lblThemeMode.bottom)
+                            height = Dimension.fillToConstraints
+                        }
                 )
 
                 Text(
@@ -88,7 +96,8 @@ fun SettingsPageContentView(
                         top.linkTo(viewDivider.bottom)
                         bottom.linkTo(parent.bottom)
                         start.linkTo(parent.start)
-                    })
+                    }
+                )
 
                 Text(
                     text = version,
@@ -97,10 +106,9 @@ fun SettingsPageContentView(
                         top.linkTo(lblAppVersion.top)
                         bottom.linkTo(lblAppVersion.bottom)
                         end.linkTo(parent.end)
-                    })
-
+                    }
+                )
             }
         }
     }
-
 }

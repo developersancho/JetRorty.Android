@@ -1,4 +1,7 @@
-
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.network
 
 suspend fun <T : Any> apiCall(call: suspend () -> T): DataState<T> {

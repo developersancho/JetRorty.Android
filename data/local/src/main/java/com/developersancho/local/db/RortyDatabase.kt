@@ -1,9 +1,12 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.local.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.developersancho.framework.room.converter.StringConverter
 import com.developersancho.local.converter.EpisodeConverter
 import com.developersancho.local.dao.FavoriteDao
 import com.developersancho.model.local.FavoriteEntity

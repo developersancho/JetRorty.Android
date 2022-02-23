@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.settings
 
 import android.content.res.Configuration
@@ -15,6 +19,7 @@ import com.developersancho.ui.theme.JetRortyTheme
 import com.developersancho.ui.view.RortyToolbar
 import org.koin.androidx.compose.getViewModel
 
+@Suppress("UnusedPrivateMember")
 @Composable
 fun SettingsPage(
     modifier: Modifier = Modifier,
