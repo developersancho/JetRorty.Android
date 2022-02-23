@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.home
 
 import androidx.compose.animation.Crossfade
@@ -24,7 +28,6 @@ import com.ramcosta.composedestinations.annotation.Destination
 @Destination(start = true)
 @Composable
 fun HomePage(navigator: NavigationProvider) {
-
     val scaffoldState = rememberScaffoldState()
     val (currentBottomTab, setCurrentBottomTab) = rememberSaveable { mutableStateOf(BottomHomeItem.CHARACTERS) }
 

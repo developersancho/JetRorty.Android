@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.ui.view
 
 import android.content.res.Configuration
@@ -18,10 +22,10 @@ import com.developersancho.ui.theme.JetRortyTheme
 import com.developersancho.ui.theme.Red
 import com.developersancho.ui.resource.R
 
-
+@Suppress("ForbiddenComment")
 @Composable
 fun ErrorView(modifier: Modifier = Modifier, e: Throwable, action: () -> Unit) {
-    // TODO: handleThrowable- create extension method
+    // todo: handleThrowable- create extension method
     e.printStackTrace()
     Column(
         modifier = modifier

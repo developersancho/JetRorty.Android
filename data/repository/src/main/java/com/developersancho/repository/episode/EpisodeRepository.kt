@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.repository.episode
 
 import androidx.annotation.VisibleForTesting

@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.base
 
 sealed class ViewState<out T> {

@@ -1,5 +1,7 @@
-@file:Suppress("UNCHECKED_CAST")
-
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.pref
 
 import android.content.Context
@@ -42,5 +44,4 @@ class CacheStore(context: Context, fileName: String) {
             preferences.clear()
         }
     }
-
 }

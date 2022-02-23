@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.base.app
 
 import android.util.Log
@@ -10,15 +14,15 @@ class TimberRemoteTree(private val deviceDetails: DeviceDetails) : Timber.DebugT
 
     private val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
     private val timeFormat = SimpleDateFormat("yyyy-MM-dd hh:mm:ss.SSS a zzz", Locale.getDefault())
-    private val date = dateFormat.format(Date(System.currentTimeMillis()))
+    // private val date = dateFormat.format(Date(System.currentTimeMillis()))
 
-    //private val logRef = Firebase.database.getReference("logs/$date/${deviceDetails.deviceId}")
+    // private val logRef = Firebase.database.getReference("logs/$date/${deviceDetails.deviceId}")
 
     override fun log(priority: Int, tag: String?, message: String, t: Throwable?) {
         if (BuildConfig.DEBUG.not()) {
             val timestamp = System.currentTimeMillis()
             val time = timeFormat.format(Date(timestamp))
-            val remoteLog = RemoteLog(priorityAsString(priority), tag, message, t.toString(), time)
+            // val remoteLog = RemoteLog(priorityAsString(priority), tag, message, t.toString(), time)
 
 //            with(logRef) {
 //                updateChildren(mapOf(Pair("-DeviceDetails", deviceDetails)))

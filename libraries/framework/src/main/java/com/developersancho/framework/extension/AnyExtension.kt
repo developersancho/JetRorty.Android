@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.extension
 
 val Any.classTag: String get() = this.javaClass.canonicalName.orEmpty()

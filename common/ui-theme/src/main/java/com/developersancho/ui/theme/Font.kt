@@ -1,10 +1,13 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.ui.theme
 
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import com.developersancho.ui.resource.R
-
 
 val RalewayFonts = FontFamily(
     Font(R.font.raleway_regular, weight = FontWeight.Normal),

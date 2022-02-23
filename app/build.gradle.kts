@@ -1,33 +1,29 @@
+import extensions.addComposeDependencies
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.parcelize")
     id("com.google.devtools.ksp")
+    id("codeanalyzetools.quality")
 }
 
 kotlin {
-    sourceSets.debug {
-        kotlin.srcDir("build/generated/ksp/debug/kotlin")
-    }
-    sourceSets.release {
-        kotlin.srcDir("build/generated/ksp/release/kotlin")
-    }
-    sourceSets.main {
-        kotlin.srcDir("build/generated/ksp/main/kotlin")
-    }
-    sourceSets.test {
-        kotlin.srcDir("build/generated/ksp/test/kotlin")
-    }
-}
-
-/*android.applicationVariants.all { variant ->
-    kotlin.sourceSets {
-        def name = variant.name
-        getByName(name) {
-            kotlin.srcDir("build/generated/ksp/$name/kotlin")
+    sourceSets {
+        debug {
+            kotlin.srcDir("build/generated/ksp/debug/kotlin")
+        }
+        release {
+            kotlin.srcDir("build/generated/ksp/release/kotlin")
+        }
+        main {
+            kotlin.srcDir("build/generated/ksp/main/kotlin")
+        }
+        test {
+            kotlin.srcDir("build/generated/ksp/test/kotlin")
         }
     }
-}*/
+}
 
 android {
     compileSdk = Configs.CompileSdk
@@ -60,7 +56,6 @@ android {
         }
     }
 
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -72,7 +67,6 @@ android {
     }
 
     buildFeatures {
-        viewBinding = true
         compose = true
     }
 
@@ -88,7 +82,7 @@ android {
 }
 
 dependencies {
-
+    // implementation(project(Modules.CodeAnalyzeTools))
     implementation(project(Modules.Framework))
     testImplementation(project(Modules.Testing))
 
@@ -111,16 +105,7 @@ dependencies {
     implementation(project(Modules.Main))
     implementation(project(Modules.Home))
 
-    implementation(Deps.Compose.Ui)
-    implementation(Deps.Compose.Material)
-    implementation(Deps.Compose.Preview)
-    implementation(Deps.Compose.Activity)
-    implementation(Deps.Compose.Foundation)
-    implementation(Deps.Compose.MaterialIconCore)
-    implementation(Deps.Compose.MaterialIconExtended)
-    implementation(Deps.Compose.Coil)
-    implementation(Deps.Compose.Paging)
-    implementation(Deps.Compose.Constraintlayout)
+    addComposeDependencies()
 
     implementation(Deps.AndroidX.CoreKtx)
     implementation(Deps.AndroidX.LifecycleRuntime)
@@ -133,14 +118,6 @@ dependencies {
     testImplementation(Deps.Test.Junit)
     androidTestImplementation(Deps.Test.JunitExt)
     androidTestImplementation(Deps.Test.Espresso)
-
-    androidTestImplementation(Deps.Compose.Junit4)
-    debugImplementation(Deps.Compose.DebugTooling)
-
-    implementation(Deps.Accompanist.Insets)
-    implementation(Deps.Accompanist.Navigation)
-    implementation(Deps.Accompanist.Systemuicontroller)
-    implementation(Deps.Accompanist.Swiperefresh)
 
     implementation(Deps.Cache.DatastorePref)
     implementation(Deps.Cache.SecurityPref)

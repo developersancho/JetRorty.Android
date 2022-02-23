@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.base.app
 
 import android.app.Application
@@ -6,7 +10,6 @@ import com.developersancho.framework.extension.appVersion
 import com.developersancho.framework.extension.deviceId
 import timber.log.Timber
 
-// TODO: will be refactor
 open class CoreApplication : Application() {
 
     override fun onCreate() {
@@ -19,8 +22,7 @@ open class CoreApplication : Application() {
 
             Timber.plant(remoteTree)
         } else {
-            //TODO plant timber release tree.
+            // TODO plant timber release tree.
         }
     }
-
 }

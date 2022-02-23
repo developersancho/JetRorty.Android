@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.framework.network
 
 import kotlinx.coroutines.flow.Flow
@@ -23,7 +27,9 @@ sealed class DataState<out T> {
         }
     }
 
-    suspend inline fun <R : Any> suspendMap(crossinline transform: suspend (T) -> R): DataState<R> {
+    suspend inline fun <R : Any> suspendMap(
+        crossinline transform: suspend (T) -> R
+    ): DataState<R> {
         return when (this) {
             is Error -> Error(this.error)
             is Success -> Success(transform(this.result))
@@ -40,17 +46,23 @@ fun <T : Any> Flow<T>.wrapWithStatefulData(): Flow<DataState<T>> = transform { v
     return@transform emit(DataState.Success(value))
 }
 
-inline fun <T : Any, R : Any> Flow<DataState<T>>.mapState(crossinline transform: suspend (value: T) -> R): Flow<DataState<R>> =
+inline fun <T : Any, R : Any> Flow<DataState<T>>.mapState(
+    crossinline transform: suspend (value: T) -> R
+): Flow<DataState<R>> =
     transform { value ->
         return@transform emit(value.suspendMap(transform))
     }
 
-inline fun <T : Any> Flow<DataState<T>>.onSuccessState(crossinline action: suspend (value: T) -> Unit): Flow<DataState<T>> =
+inline fun <T : Any> Flow<DataState<T>>.onSuccessState(
+    crossinline action: suspend (value: T) -> Unit
+): Flow<DataState<T>> =
     onEach {
         if (it is DataState.Success) action(it.result)
     }
 
-inline fun <T : Any> Flow<DataState<T>>.onErrorState(crossinline action: suspend (error: Throwable) -> Unit): Flow<DataState<T>> =
+inline fun <T : Any> Flow<DataState<T>>.onErrorState(
+    crossinline action: suspend (error: Throwable) -> Unit
+): Flow<DataState<T>> =
     onEach {
         if (it is DataState.Error) action(it.error)
     }

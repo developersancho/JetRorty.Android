@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.jetrorty.di
 
 import com.developersancho.domain.di.domainModule

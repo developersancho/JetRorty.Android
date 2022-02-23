@@ -1,3 +1,7 @@
+/*
+ * Copyright (C) 2022, developersancho
+ * All rights reserved.
+ */
 package com.developersancho.splash
 
 import androidx.test.platform.app.InstrumentationRegistry
