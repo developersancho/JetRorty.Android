@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_700">#616161</color>
+
+    <color name="blue_primary">#252941</color>
+    <color name="blue_primary_dark">#05060B</color>
+    <color name="red_primary">#D13438</color>
+    <color name="red_primary_dark">#982626</color>
+
+    <color name="color_background">#F5F2F5</color>
+    <color name="color_background_dark">#24292E</color>
+
+    <color name="color_card_view_light">#FFFFFF</color>
+    <color name="color_card_view_dark">#3B3E43</color>
+
+    <color name="green_circle">#00C853</color>
+    <color name="red_circle">#D50000</color>
+    <color name="gray_circle">#919191</color>
+
+    <color name="border_color">#e5e5ea</color>
+
+    <color name="gray_25">#F8F8F8</color>
+    <color name="gray_50">#F1F1F1</color>
+    <color name="gray_75">#ECECEC</color>
+    <color name="gray_100">#E1E1E1</color>
+    <color name="gray_200">#C8C8C8</color>
+    <color name="gray_300">#ACACAC</color>
+    <color name="gray_400">#919191</color>
+    <color name="gray_500">#6E6E6E</color>
+    <color name="gray_600">#535353</color>
+    <color name="gray_700">#303030</color>
+    <color name="gray_800">#292929</color>
+    <color name="gray_900">#212121</color>
+    <color name="gray_950">#141414</color>
+
+</resources>

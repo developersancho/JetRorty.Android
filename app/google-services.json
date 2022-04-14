@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "509328132397",
+    "project_id": "jettraining-37b60",
+    "storage_bucket": "jettraining-37b60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509328132397:android:e79100e205aac42d002ba4",
+        "android_client_info": {
+          "package_name": "com.developersancho.jetrorty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509328132397-kf4jfud0as1b6782nk51qnv78qjej3gc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1YkmbO6KweJiEYAdJNAHtYPHvs38_nWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509328132397-kf4jfud0as1b6782nk51qnv78qjej3gc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509328132397:android:4710b6ac9b589c28002ba4",
+        "android_client_info": {
+          "package_name": "com.developersancho.jetrorty.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509328132397-kf4jfud0as1b6782nk51qnv78qjej3gc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1YkmbO6KweJiEYAdJNAHtYPHvs38_nWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509328132397-kf4jfud0as1b6782nk51qnv78qjej3gc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509328132397:android:93af4b41e989e609002ba4",
+        "android_client_info": {
+          "package_name": "com.developersancho.rortycompose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509328132397-kf4jfud0as1b6782nk51qnv78qjej3gc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1YkmbO6KweJiEYAdJNAHtYPHvs38_nWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509328132397-kf4jfud0as1b6782nk51qnv78qjej3gc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

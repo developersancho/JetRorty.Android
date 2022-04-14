@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bottom_menu_characters">Karakterler</string>
+    <string name="bottom_menu_episodes">Bölümler</string>
+    <string name="bottom_menu_locations">Konumlar</string>
+    <string name="bottom_menu_settings">Ayarlar</string>
+
+    <string name="common_check_internet_dialog_message">İnternet Bağlantınızı Kontrol Edin!</string>
+    <string name="common_general_close">Kapat</string>
+
+    <string name="toolbar_characters_title">Karakterler</string>
+    <string name="toolbar_locations_title">Konumlar</string>
+    <string name="toolbar_episodes_title">Bölümler</string>
+    <string name="toolbar_settings_title">Ayarlar</string>
+
+    <string name="toolbar_character_detail_title">Karakter Detay</string>
+    <string name="toolbar_location_detail_title">Konum Detay</string>
+    <string name="toolbar_episode_detail_title">Bölüm Detay</string>
+
+    <string name="toolbar_terms_and_privacy_title">Şartlar ve Gizlilik</string>
+    <string name="toolbar_app_language_title">Uygulama Dili</string>
+    <string name="toolbar_about_title">Hakkımızda</string>
+
+    <string name="text_episode">Bölüm</string>
+    <string name="text_dimension">Boyut</string>
+    <string name="text_air_date">Hava Tarihi</string>
+    <string name="text_species">Türler</string>
+    <string name="text_gender">Cinsiyet</string>
+    <string name="text_type">Tip</string>
+    <string name="text_last_know_location">Son Bilinen Konum</string>
+    <string name="text_location">Konum</string>
+    <string name="text_name">İsim</string>
+    <string name="text_remove">Kaldır</string>
+    <string name="text_approve_remove">Onayla Kaldır</string>
+    <string name="text_favor_delete">Favori Silme</string>
+    <string name="text_cancel">İptal</string>
+    <string name="text_delete_favor_description">Bu işlemi gerçekleştirerek, %s kaydının silinmesini onaylıyor musunuz?</string>
+    <string name="text_theme_mode">Tema Modu</string>
+    <string name="text_rate_app">Uygulamaya Puan ver</string>
+    <string name="text_share_app">Uygulamayı Paylaş</string>
+    <string name="text_term_and_privacy">Şartlar &amp; Gizlilik</string>
+    <string name="text_app_language">Uygulama Dili</string>
+    <string name="text_about">Hakkımızda</string>
+    <string name="text_app_version">Uygulama Versiyonu</string>
+    <string name="app_exit_label">Çıkmak için tekrar GERİ tuşuna basın</string>
+    <string name="text_no_data_found">Uygun veri bulunamadı.</string>
+    <string name="text_retry">Tekrar Dene</string>
+    <string name="text_error_icon">Hata Ikon</string>
+    <string name="text_empty">Boş</string>
+
+    <string name="text_character_list">Karakter Listesi</string>
+    <string name="text_episode_list">Bölüm Listesi</string>
+    <string name="text_location_list">Konum Listesi</string>
+    <string name="text_favorite_list">Favori Listesi</string>
+    <string name="text_information">Bilgi</string>
+    <string name="text_episodes">Bölümler</string>
+    <string name="text_characters">Karakterler</string>
+    <string name="text_finish">Bitir</string>
+
+    <string name="text_language_english">İngilizce</string>
+    <string name="text_language_turkish">Türkçe</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.JetRorty" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/blue_primary</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.JetRorty">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+</resources>
