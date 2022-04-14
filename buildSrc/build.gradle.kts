@@ -51,7 +51,7 @@ gradlePlugin {
 }
 
 object Versions {
-    const val GRADLE = "7.1.1"
+    const val GRADLE = "7.1.3"
     const val KOTLIN = "1.6.10"
     const val KSP = "1.6.10-1.0.2"
     const val VERSION_CHECKER = "0.42.0"
