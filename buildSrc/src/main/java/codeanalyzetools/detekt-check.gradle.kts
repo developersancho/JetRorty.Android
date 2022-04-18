@@ -12,7 +12,7 @@ plugins {
 
 configure<DetektExtension> {
     autoCorrect = true
-    toolVersion = "1.20.0-RC2"
+    toolVersion = "1.20.0"
     parallel = false
     source = files(
         "src/main/kotlin",
@@ -22,7 +22,7 @@ configure<DetektExtension> {
 }
 
 dependencies {
-    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.20.0-RC2")
+    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.20.0")
 }
 
 tasks.withType<Detekt>().configureEach {

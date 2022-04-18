@@ -4,6 +4,7 @@ plugins {
     id("commons.android-library")
     id("com.google.devtools.ksp")
     id("dagger.hilt.android.plugin")
+    id("codeanalyzetools.jacoco-report")
 }
 
 dependencies {

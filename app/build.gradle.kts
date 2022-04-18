@@ -8,6 +8,7 @@ plugins {
     id("org.jetbrains.kotlin.kapt")
     id("dagger.hilt.android.plugin")
     id("codeanalyzetools.quality")
+    id("codeanalyzetools.jacoco-report")
 }
 
 if (file("google-services.json").exists()) {

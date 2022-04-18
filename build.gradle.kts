@@ -11,6 +11,8 @@ plugins {
 
 apply<codequality.DependencyUpdatePlugin>()
 
+apply(plugin = "codeanalyzetools.jacoco-multi-report")
+
 tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
 }

@@ -1,13 +1,15 @@
+import extensions.FRAMEWORK
 import extensions.implementation
 import extensions.ksp
 
 plugins {
     id("commons.android-library")
     id("com.google.devtools.ksp")
+    id("codeanalyzetools.jacoco-report")
 }
 
 dependencies {
-    implementation(project(mapOf("path" to ":libraries:framework")))
+    FRAMEWORK
 
     implementation(NetworkLib.Moshi)
     ksp(NetworkLib.MoshiCodegen)
