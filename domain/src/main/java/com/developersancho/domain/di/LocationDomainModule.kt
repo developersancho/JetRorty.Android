@@ -43,7 +43,7 @@ class LocationDomainModule {
 
     @Singleton
     @Provides
-    fun provideDeleteCharacterFavorite(repository: LocationRepository): DeleteLocationFavorite {
+    fun provideDeleteLocationFavorite(repository: LocationRepository): DeleteLocationFavorite {
         return DeleteLocationFavorite(repository)
     }
 

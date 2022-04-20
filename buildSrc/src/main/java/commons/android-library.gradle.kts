@@ -42,6 +42,12 @@ android {
         jvmTarget = JavaVersion.VERSION_11.toString()
         freeCompilerArgs = Configs.FreeCoroutineCompilerArgs
     }
+
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+        }
+    }
 }
 
 android.libraryVariants.all {

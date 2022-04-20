@@ -15,7 +15,7 @@ import org.gradle.testing.jacoco.tasks.JacocoReportsContainer
 plugins.apply(JacocoPlugin::class)
 
 configure<JacocoPluginExtension> {
-    toolVersion = "0.8.7"
+    toolVersion = "0.8.8"
 }
 
 tasks.withType<Test> {
@@ -48,6 +48,25 @@ val fileFilter = listOf(
     // sealed and data classes
     "**/*$Result.*",
     "**/*$Result\$*.*",
+    "**/*App.*",
+    "**/*Application.*",
+    "**/*Activity.*",
+    "**/*Fragment.*",
+    "**/*Destination*.*",
+    "**/*Screen*.*",
+    "**/*Page*.*",
+    "**/*Body*.*",
+    "**/*Content*.*",
+    "**/*View*.*",
+    "**/*Row*.*",
+    "**/com/developersancho/jetrorty/app/*",
+    "**/com/developersancho/jetrorty/provider/*",
+    "**/com/developersancho/jetrorty/navigation/*",
+    "**/com/developersancho/jetrorty/di/*",
+    "**/com/developersancho/welcome/*",
+    "**/com/developersancho/splash/*",
+    "**/com/developersancho/home/*",
+    "**/com/developersancho/settings/*",
 )
 
 private val classDirectoriesTree = fileTree(project.buildDir) {
@@ -122,7 +141,7 @@ afterEvaluate {
     tasks.register<JacocoCoverageVerification>("jacocoAndroidTestCoverage") {
         group = "JacocoReport"
         description =
-            "Generates coverage ratio(./gradlew jacocoAndroidTestCoverage -PminCoverage=0.8)"
+            "Generates coverage ratio(./gradlew jacocoAndroidTestCoverage -PminCoverage=0.5)"
         setDirectories()
         violationRules {
             isFailOnViolation = true

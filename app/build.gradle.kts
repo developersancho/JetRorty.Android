@@ -52,7 +52,7 @@ android {
 
         debug {
             signingConfig = signingConfigs.getByName("debug")
-            isTestCoverageEnabled = true
+            isTestCoverageEnabled = false
             isDebuggable = true
             buildConfigField("String", "BASE_URL", "\"${Configs.Debug.BaseUrl}\"")
             buildConfigField("String", "DB_NAME", "\"${Configs.Debug.DbName}\"")
@@ -80,6 +80,12 @@ android {
     packagingOptions {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1,gradle-plugins}"
+        }
+    }
+
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
         }
     }
 }

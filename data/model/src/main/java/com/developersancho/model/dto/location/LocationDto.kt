@@ -8,11 +8,11 @@ import kotlinx.parcelize.Parcelize
 data class LocationDto(
     val id: Int,
     val name: String,
-    val url: String?,
-    val dimension: String?,
-    val created: String?,
-    val type: String?,
-    val residents: List<String>,
+    val url: String? = null,
+    val dimension: String? = null,
+    val created: String? = null,
+    val type: String? = null,
+    val residents: List<String> = emptyList(),
     val residentDtoList: MutableList<CharacterDto> = mutableListOf(),
     var isFavorite: Boolean = false
 ) : Parcelable {

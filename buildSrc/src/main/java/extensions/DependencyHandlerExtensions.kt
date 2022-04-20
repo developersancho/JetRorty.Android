@@ -178,14 +178,15 @@ fun DependencyHandler.addHuaweiDependencies() {
 
 fun DependencyHandler.addTestDependencies() {
     // Test
-    testImplementation(TestingLib.Junit)
-    androidTestImplementation(AndroidTestingLib.JunitExt)
-    androidTestImplementation(AndroidTestingLib.EspressoCore)
-    testImplementation(TestingLib.Coroutine)
-    testImplementation(TestingLib.Truth)
-    testImplementation(TestingLib.Robolectric)
-    testImplementation(TestingLib.Turbine)
-    testImplementation(TestingLib.Mockk)
+//    testImplementation(TestingLib.Junit)
+//    androidTestImplementation(AndroidTestingLib.JunitExt)
+//    androidTestImplementation(AndroidTestingLib.EspressoCore)
+//    testImplementation(TestingLib.Coroutine)
+//    testImplementation(TestingLib.Truth)
+//    testImplementation(TestingLib.Robolectric)
+//    testImplementation(TestingLib.Turbine)
+//    testImplementation(TestingLib.Mockk)
+    TEST
 }
 
 fun DependencyHandler.addModuleDependencies() {
@@ -267,3 +268,6 @@ val DependencyHandler.FRAMEWORK
 
 val DependencyHandler.JETFRAMEWORK
     get() = implementation(project(mapOf("path" to ":libraries:jetframework")))
+
+val DependencyHandler.TEST
+    get() = testImplementation(project(mapOf("path" to ":libraries:testutils")))
