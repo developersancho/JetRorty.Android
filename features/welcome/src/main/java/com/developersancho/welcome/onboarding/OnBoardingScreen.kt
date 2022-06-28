@@ -20,6 +20,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.developersancho.framework.extension.getActivity
 import com.developersancho.framework.extension.launchActivity
 import com.developersancho.theme.*
 import com.developersancho.theme.R
@@ -61,10 +62,14 @@ fun OnBoardingScreen(viewModel: OnBoardingViewModel = hiltViewModel()) {
             pagerState = pagerState
         ) {
             viewModel.saveOnBoardingState(completed = true)
-            context.launchActivity(
-                packageName = context.packageName,
-                className = "com.developersancho.jetrorty.navigation.MainActivity"
-            )
+            context.getActivity()?.run {
+                launchActivity(
+                    packageName = context.packageName,
+                    className = "com.developersancho.jetrorty.navigation.MainActivity"
+                ).also {
+                    finish()
+                }
+            }
         }
     }
 }

@@ -34,13 +34,17 @@ class StartActivity : FragmentActivity() {
         launchActivity(
             packageName = packageName,
             className = "com.developersancho.jetrorty.navigation.MainActivity"
-        )
+        ).also {
+            finish()
+        }
     }
 
     private fun navigateWelcomeActivity() {
         launchActivity(
             packageName = packageName,
             className = "com.developersancho.welcome.WelcomeActivity"
-        )
+        ).also {
+            finish()
+        }
     }
 }
